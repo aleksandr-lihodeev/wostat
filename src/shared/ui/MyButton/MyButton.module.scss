@@ -1,0 +1,58 @@
+.myButton {
+  border: 0;
+  outline: none;
+  background: none;
+
+}
+
+.main__header__btn {
+  display: block;
+  padding: 10px 44px 10px 44px;
+  border-radius: 4px;
+  background: var(--blue-color);
+  color: var(--white-color);
+  font-size: 18px;
+}
+.main__header__burger {
+  display: none;
+}
+.main__content__btn {
+  display: none;
+
+}
+
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+  .main__header__btn {
+    display: none;
+  }
+
+  .main__header__burger {
+    display: block;
+  }
+
+  .main__content__btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    padding: 10px 44px 10px 44px;
+    border-radius: 4px;
+    background: var(--blue-color);
+    color: var(--white-color);
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main__content__btn {
+    position: absolute;
+    bottom: -40%;
+    width: 100%;
+  }
+}
+

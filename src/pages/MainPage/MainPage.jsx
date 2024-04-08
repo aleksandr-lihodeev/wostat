@@ -9,6 +9,7 @@ import DiscoverDashboard from '../../shared/assets/img/mockup-discover.png'
 import DiscoverDashboardLg from '../../shared/assets/img/mockup-discover-lg.png'
 import DiscoverDashboardXl from '../../shared/assets/img/mockup-discover-xl.png'
 import DiscoverDashboardSm from '../../shared/assets/img/mockup-discover-sm.png'
+import TeamImage from '../../shared/assets/img/team.png'
 
 
 const MainPage = () => {
@@ -36,9 +37,15 @@ const MainPage = () => {
                     <div className={cls.main__header__wrap}>
                         <nav className={`${cls.main__header__nav} ${isOpen ? cls.main__header__nav__active : ''}`}>
                             <ul className={cls.main__header__list}>
-                                <li className={cls.main__header__item}><Link>About</Link></li>
-                                <li className={cls.main__header__item}><Link>Product</Link></li>
-                                <li className={cls.main__header__item}><Link>Researches</Link></li>
+                                <li className={cls.main__header__item}>
+                                    <Link to={'/'}>About</Link>
+                                </li>
+                                <li className={cls.main__header__item}>
+                                    <Link to={'/'}>Product</Link>
+                                </li>
+                                <li className={cls.main__header__item}>
+                                    <Link to={'/'}>Researches</Link>
+                                </li>
                             </ul>
                         </nav>
 
@@ -59,25 +66,28 @@ const MainPage = () => {
                 </div>
             </section>
             <section className={cls.discover__block}>
-                <div className="container">
+                <div className={`${windowWidth <= 768 ? '' : 'container'}`}>
                     <div className={cls.discover__wrap}>
-                        <div className={cls.discover__info}>
-                            <p className={cls.discover__title}>Discover new horizons</p>
-                            <p className={cls.discover__subtitle}><span>WOSTAT</span> is a leading organization
-                                specializing in
-                                computing
-                                statistics across the Internet and
-                                conducting research.
-                            </p>
-                            <p className={cls.discover__subtitle}> We have a variety of data collection methods,
-                                including
-                                monitoring network traffic,
-                                analyzing
-                                search queries, studying social media, as well as using specialized algorithms and
-                                tools.</p>
-                            <div className={cls.discover__link__btn}>
-                                <a href="#" className={cls.discover__link}>Learn more </a>
-                                <DiscoverLink className={cls.discover__link__icon}/>
+                        <div className={`${windowWidth <= 768 ? 'container' : ''}`}>
+
+                            <div className={cls.discover__info}>
+                                <p className={cls.discover__title}>Discover new horizons</p>
+                                <p className={cls.discover__subtitle}><span>WOSTAT</span> is a leading organization
+                                    specializing in
+                                    computing
+                                    statistics across the Internet and
+                                    conducting research.
+                                </p>
+                                <p className={cls.discover__subtitle}> We have a variety of data collection methods,
+                                    including
+                                    monitoring network traffic,
+                                    analyzing
+                                    search queries, studying social media, as well as using specialized algorithms and
+                                    tools.</p>
+                                <div className={cls.discover__link__btn}>
+                                    <a href="#" className={cls.discover__link}>Learn more </a>
+                                    <DiscoverLink className={cls.discover__link__icon}/>
+                                </div>
                             </div>
                         </div>
 
@@ -95,10 +105,32 @@ const MainPage = () => {
                                 }
                                 alt="mockup"/>
                         </div>
-
                     </div>
                 </div>
+            </section>
 
+            <section className={cls.team}>
+                <div className={`${windowWidth <= 768 ? '' : 'container'}`}>
+                    <div className={cls.team__wrap}>
+                        <img src={TeamImage} alt="team image"/>
+
+                        <div className={`${windowWidth <= 768 ? 'container' : ''}`}>
+                            <div className={cls.team__wrap__block}>
+                                <p className={cls.team__title}>Team, this is the most valuable</p>
+                                <p className={cls.team__subtitle}>The WOSTAT team is a cohesive and highly qualified
+                                    group of experts united by common
+                                    goals and the desire to provide customers with the highest level of service. Each
+                                    member
+                                    of the team makes a unique contribution and has a professional skill in their
+                                    field.</p>
+                                <div className={cls.team__link__btn}>
+                                    <a href="#" className={cls.team__link}>Job openings</a>
+                                    <DiscoverLink className={cls.team__link__icon}/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </>
 

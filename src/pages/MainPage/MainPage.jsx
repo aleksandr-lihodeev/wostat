@@ -10,6 +10,13 @@ import DiscoverDashboardLg from '../../shared/assets/img/mockup-discover-lg.png'
 import DiscoverDashboardXl from '../../shared/assets/img/mockup-discover-xl.png'
 import DiscoverDashboardSm from '../../shared/assets/img/mockup-discover-sm.png'
 import TeamImage from '../../shared/assets/img/team.png'
+import {ReactComponent as OpenZeppelin} from "../../shared/assets/svg/partners-openZeppelin.svg";
+import {ReactComponent as Oracle} from "../../shared/assets/svg/partners-oracle.svg";
+import {ReactComponent as Morpheus} from "../../shared/assets/svg/partners-morpheus.svg";
+import {ReactComponent as Samsung} from "../../shared/assets/svg/partners-samsung.svg";
+import {ReactComponent as Monday} from "../../shared/assets/svg/partners-monday.svg";
+import {ReactComponent as Segment} from "../../shared/assets/svg/partners-segment.svg";
+import {ReactComponent as Protonet} from "../../shared/assets/svg/partners-protonet.svg";
 
 
 const MainPage = () => {
@@ -129,6 +136,40 @@ const MainPage = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section className={cls.partners}>
+                <div className="container">
+                    <p>Over 200+ partners</p>
+                    <div className={cls.partners__icons}>
+                        {windowWidth <= 992 ? (
+                            <>
+                                <div className={cls.partners__mediaWidthFirst}>
+                                    <OpenZeppelin/>
+                                    <Oracle/>
+                                    <Morpheus/>
+                                    <Samsung/>
+                                </div>
+                                <div className={cls.partners__mediaWidthSecond}>
+                                    <Monday/>
+                                    <Segment/>
+                                    <Protonet/>
+                                </div>
+                            </>
+                        ) : (
+                            <>
+                                <OpenZeppelin/>
+                                <Oracle/>
+                                <Morpheus/>
+                                <Samsung/>
+                                <Monday/>
+                                <Segment/>
+                                <Protonet/>
+                            </>
+                        )}
+
+
                     </div>
                 </div>
             </section>

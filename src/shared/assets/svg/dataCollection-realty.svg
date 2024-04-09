@@ -1,0 +1,69 @@
+<svg width="51.000000" height="50.000000" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_11_496_dd" x="12.683960" y="13.000000" width="20.175293" height="20.068268" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feGaussianBlur in="BackgroundImage" stdDeviation="4.33333"/>
+			<feComposite in2="SourceAlpha" operator="in" result="effect_backgroundBlur_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_backgroundBlur_1" result="shape"/>
+		</filter>
+		<filter id="filter_11_497_dd" x="-0.610352" y="-0.364258" width="46.846313" height="46.778168" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feGaussianBlur stdDeviation="5.66667" result="effect_layerBlur_1"/>
+		</filter>
+		<filter id="filter_11_499_dd" x="15.636719" y="15.931641" width="22.175293" height="22.068268" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feGaussianBlur in="BackgroundImage" stdDeviation="8"/>
+			<feComposite in2="SourceAlpha" operator="in" result="effect_backgroundBlur_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_backgroundBlur_1" result="shape"/>
+		</filter>
+		<filter id="filter_11_500_dd" x="18.698181" y="17.952393" width="27.061340" height="28.027313" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feGaussianBlur in="BackgroundImage" stdDeviation="5"/>
+			<feComposite in2="SourceAlpha" operator="in" result="effect_backgroundBlur_1"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="5" dy="5"/>
+			<feGaussianBlur stdDeviation="3.33333"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.32157 0 0 0 0 0.54902 0 0 0 0.5 0"/>
+			<feBlend mode="normal" in2="effect_backgroundBlur_1" result="effect_dropShadow_2"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_2" result="shape"/>
+		</filter>
+		<linearGradient id="paint_linear_11_496_0" x1="24.256901" y1="24.377983" x2="9.651475" y2="39.339592" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FF759F"/>
+			<stop offset="1.000000" stop-color="#FF196E"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_11_499_0" x1="19.848297" y1="19.269619" x2="32.694607" y2="35.143265" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FFFFFF" stop-opacity="0.250980"/>
+			<stop offset="1.000000" stop-color="#FFFFFF" stop-opacity="0.000000"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_11_500_0" x1="30.258890" y1="24.401962" x2="22.652271" y2="33.725891" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FFFFFF"/>
+			<stop offset="1.000000" stop-color="#FFFFFF" stop-opacity="0.200000"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_11_500_1" x1="24.822233" y1="23.887583" x2="29.318439" y2="30.237041" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FFFFFF" stop-opacity="0.250980"/>
+			<stop offset="1.000000" stop-color="#FFFFFF" stop-opacity="0.000000"/>
+		</linearGradient>
+	</defs>
+	<g opacity="0.200000">
+		<circle id="Ellipse" cx="25.500000" cy="25.000000" r="25.000000" fill="#F23685" fill-opacity="1.000000"/>
+	</g>
+	<g filter="url(#filter_11_496_dd)">
+		<path id="Vector" d="M32.85 23.03C32.85 28.57 28.34 33.06 22.77 33.06C17.2 33.06 12.68 28.57 12.68 23.03C12.68 17.49 17.2 13 22.77 13C28.34 13 32.85 17.49 32.85 23.03Z" fill="url(#paint_linear_11_496_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+	<g opacity="0.500000" filter="url(#filter_11_497_dd)">
+		<path id="Vector" d="M29.23 23.02C29.23 26.55 26.36 29.41 22.81 29.41C19.26 29.41 16.38 26.55 16.38 23.02C16.38 19.49 19.26 16.63 22.81 16.63C26.36 16.63 29.23 19.49 29.23 23.02Z" fill="#F41E59" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+	<g filter="url(#filter_11_499_dd)">
+		<path id="Vector" d="M36.81 26.96C36.81 32.5 32.29 36.99 26.72 36.99C21.15 36.99 16.63 32.5 16.63 26.96C16.63 21.42 21.15 16.93 26.72 16.93C32.29 16.93 36.81 21.42 36.81 26.96Z" fill="#FF749F" fill-opacity="0.350000" fill-rule="nonzero"/>
+	</g>
+	<path id="Vector" d="M22.43 37.17Q24.4 37.99 26.72 37.99Q29.03 37.99 31.01 37.17Q32.95 36.37 34.56 34.77Q36.2 33.14 37.01 31.17Q37.81 29.23 37.81 26.96Q37.81 24.69 37.01 22.76Q36.2 20.79 34.56 19.16Q32.95 17.55 31.01 16.75Q29.03 15.93 26.72 15.93Q24.41 15.93 22.43 16.75Q20.49 17.55 18.88 19.16Q17.24 20.79 16.43 22.76Q15.63 24.69 15.63 26.96Q15.63 29.23 16.43 31.17Q17.24 33.14 18.88 34.77Q20.49 36.37 22.43 37.17ZM26.72 36.99C32.29 36.99 36.81 32.5 36.81 26.96C36.81 21.42 32.29 16.93 26.72 16.93C21.15 16.93 16.63 21.42 16.63 26.96C16.63 32.5 21.15 36.99 26.72 36.99Z" fill="url(#paint_linear_11_499_0)" fill-opacity="1.000000" fill-rule="evenodd"/>
+	<g filter="url(#filter_11_500_dd)">
+		<path id="Vector" d="M30.75 26.97C30.75 27.22 30.67 27.47 30.51 27.68C30.48 27.72 30.34 27.88 30.23 27.99L30.17 28.05C29.33 28.94 27.23 30.27 26.17 30.7C26.17 30.71 25.54 30.97 25.24 30.97L25.2 30.97C24.74 30.97 24.31 30.72 24.08 30.31C23.96 30.09 23.85 29.43 23.84 29.42C23.75 28.84 23.69 27.94 23.69 26.96C23.69 25.92 23.75 24.99 23.86 24.41C23.86 24.4 23.97 23.87 24.04 23.7C24.15 23.45 24.36 23.23 24.61 23.09C24.81 23 25.02 22.95 25.24 22.95C25.47 22.96 25.9 23.1 26.07 23.17C27.19 23.6 29.34 25.01 30.16 25.86C30.3 26 30.45 26.17 30.49 26.21C30.66 26.42 30.75 26.68 30.75 26.97Z" fill="url(#paint_linear_11_500_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+	<path id="Vector" d="M30.17 28.05L30.23 27.99C30.34 27.88 30.48 27.72 30.51 27.68C30.67 27.47 30.75 27.22 30.75 26.97C30.75 26.68 30.66 26.42 30.49 26.21C30.45 26.17 30.3 26 30.16 25.86C29.34 25.01 27.19 23.6 26.07 23.17C25.9 23.1 25.47 22.96 25.24 22.95C25.02 22.95 24.81 23 24.61 23.09C24.36 23.23 24.15 23.45 24.04 23.7C23.97 23.87 23.86 24.4 23.86 24.41C23.75 24.99 23.69 25.92 23.69 26.96C23.69 27.94 23.75 28.84 23.84 29.42C23.85 29.43 23.96 30.09 24.08 30.31C24.31 30.72 24.74 30.97 25.2 30.97L25.24 30.97C25.54 30.97 26.17 30.71 26.17 30.7C27.23 30.27 29.33 28.94 30.17 28.05ZM25.23 30.57Q25.36 30.57 25.69 30.46Q25.73 30.44 25.77 30.43L26.02 30.33Q26.39 30.18 26.93 29.88Q27.47 29.58 28.04 29.21Q28.62 28.83 29.1 28.46Q29.6 28.07 29.88 27.77L29.89 27.77L29.95 27.7Q30.02 27.64 30.1 27.54Q30.17 27.46 30.19 27.44L30.2 27.43Q30.25 27.36 30.29 27.29Q30.35 27.14 30.35 26.97Q30.35 26.79 30.29 26.64Q30.25 26.55 30.19 26.47Q30.17 26.44 30.12 26.39Q29.97 26.23 29.88 26.15L29.88 26.15L29.87 26.14Q29.59 25.85 29.09 25.46Q28.6 25.08 28.01 24.69Q27.42 24.3 26.87 24Q26.31 23.69 25.92 23.54Q25.77 23.48 25.56 23.42Q25.33 23.35 25.23 23.35Q25.16 23.35 25.09 23.36Q24.94 23.38 24.79 23.45Q24.62 23.54 24.52 23.68Q24.46 23.76 24.41 23.85Q24.38 23.94 24.32 24.21Q24.29 24.31 24.27 24.4Q24.27 24.43 24.26 24.45L24.26 24.49Q24.18 24.89 24.14 25.54Q24.09 26.19 24.09 26.96Q24.09 27.67 24.13 28.32Q24.17 28.92 24.24 29.34Q24.24 29.36 24.24 29.37Q24.25 29.39 24.26 29.45Q24.37 30.01 24.44 30.12Q24.49 30.22 24.56 30.3Q24.64 30.39 24.75 30.45Q24.86 30.52 24.98 30.55Q25.08 30.57 25.2 30.57L25.23 30.57Z" fill="url(#paint_linear_11_500_1)" fill-opacity="1.000000" fill-rule="evenodd"/>
+</svg>

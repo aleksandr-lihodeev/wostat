@@ -18,6 +18,8 @@ import {ReactComponent as Monday} from "../../shared/assets/svg/partners-monday.
 import {ReactComponent as Segment} from "../../shared/assets/svg/partners-segment.svg";
 import {ReactComponent as Protonet} from "../../shared/assets/svg/partners-protonet.svg";
 
+import {directionsOfDataCollection} from "../../shared/lib/config";
+
 
 const MainPage = () => {
     const [isOpen, setOpen] = useState(true)
@@ -35,6 +37,7 @@ const MainPage = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
+
 
     return (
         <>
@@ -171,6 +174,31 @@ const MainPage = () => {
 
 
                     </div>
+                </div>
+            </section>
+
+            <section className={cls.dataCollection}>
+                <div className="container">
+                    <p className={cls.dataCollection__title}>Directions of data collection</p>
+
+                    <div className={cls.dataCollection__cardWrap}>
+                        {directionsOfDataCollection.map((element) => {
+                            return (
+                                <>
+                                    <div className={cls.dataCollection__card}>
+                                        {element.ico}
+                                        <div className={cls.dataCollection__cardInfo}>
+                                            <p className={cls.cardInfo__title}>{element.title}</p>
+                                            <p className={cls.cardInfo__descr}>{element.descr}</p>
+                                        </div>
+                                    </div>
+                                </>
+                            )
+                        })}
+                    </div>
+
+
+
                 </div>
             </section>
         </>

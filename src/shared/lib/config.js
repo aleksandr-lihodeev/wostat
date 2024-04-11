@@ -37,3 +37,22 @@ export const directionsOfDataCollection = [
         descr:'Data-driven insights on market position, competitiveness, and growth potential.'
     },
 ]
+
+export const costPerMonth = [
+    {
+        titlePrice:'start',
+        price: 0,
+        titleMain:'Research what is on the site',
+    },
+    {
+        titlePrice:'average ',
+        price: 69,
+        titleMain:'Up to three directions',
+    },
+    {
+        titlePrice:'Advanced',
+        price: 609,
+        titleMain:'All directions',
+    },
+
+]

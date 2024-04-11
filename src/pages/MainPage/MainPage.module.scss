@@ -1,3 +1,4 @@
+
 .MainPage {
   background-image: url('../../shared/assets/img/main-bgc.png');
   background-repeat: no-repeat;
@@ -235,6 +236,116 @@
   }
 }
 
+
+.costPerMonth {
+  background: #F5F5F5;
+  .costPerMonth__title {
+    color: var(--dark-color);
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .costPerMonth__prices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+
+
+    .costPerMonth__card {
+      transition: all 0.3s linear;
+      position: relative;
+      padding: 38px;
+      border: 1px solid rgb(179, 179, 179);
+
+      .costPerMonth__cardWrap {
+        transition: all 0.3s linear;
+        position: absolute;
+        top: 0;
+        right: 50%;
+        transform: translate(50%, -50%);
+        border: 1px solid rgb(179, 179, 179);
+        background: rgb(255, 255, 255);
+        padding: 8px 41px;
+
+        .costPerMonth__cardWrap__title {
+          color: var(--soft-blue);
+          font-size: 14px;
+          font-weight: 700;
+          text-align: center;
+          text-transform: uppercase;
+        }
+
+        .costPerMonth__cardWrap__priceWrap {
+          position: relative;
+          height: 70px;
+
+          .costPerMonth__cardWrap__dollar {
+            position: absolute;
+            top: 0;
+            color: var(--soft-blue);
+          }
+
+          .costPerMonth__cardWrap__price {
+            color: var(--soft-blue);
+            font-size: 58px;
+            font-weight: 700;
+          }
+        }
+      }
+
+      .costPerMonth__cardFile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
+
+        p {
+          margin: 0;
+          color: rgb(109, 125, 139);
+        }
+      }
+
+      .costPerMonth__cardInfo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 60px;
+        row-gap: 40px;
+      }
+    }
+
+    .costPerMonth__card:hover {
+      border: 1px solid var(--dark-color);
+
+      .costPerMonth__cardWrap {
+        background: var(--dark-color);
+
+        .costPerMonth__cardWrap__title {
+          color: rgb(255, 255, 255);
+        }
+
+        .costPerMonth__cardWrap__priceWrap {
+          .costPerMonth__cardWrap__dollar {
+            color: rgb(255, 255, 255);
+          }
+
+          .costPerMonth__cardWrap__price {
+            color: rgb(255, 255, 255);
+          }
+        }
+      }
+      .costPerMonth__cardFile {
+        p {
+          color: var(--dark-color);
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 992px) {
   .MainPage {
     background-image: url('../../shared/assets/img/main-bgc-lg.png');
@@ -408,8 +519,118 @@
       }
     }
   }
-}
 
+
+  .costPerMonth {
+    padding: 0 0 100px 0;
+    .costPerMonth__title {
+      font-size: 40px;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+
+    .swiper__costPerMonth {
+
+      .arrowWrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 30px;
+        margin-top: 40px;
+      }
+      .costPerMonth__card {
+        transition: all 0.3s linear;
+        position: relative;
+        padding: 38px;
+        border: 1px solid rgb(179, 179, 179);
+
+        .costPerMonth__cardWrap {
+          transition: all 0.3s linear;
+          position: absolute;
+          top: 0;
+          right: 50%;
+          transform: translate(50%, -50%);
+          border: 1px solid rgb(179, 179, 179);
+          background: rgb(255, 255, 255);
+          padding: 8px 41px;
+
+          .costPerMonth__cardWrap__title {
+            color: var(--soft-blue);
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+          }
+
+          .costPerMonth__cardWrap__priceWrap {
+            position: relative;
+            height: 70px;
+
+            .costPerMonth__cardWrap__dollar {
+              position: absolute;
+              top: 0;
+              color: var(--soft-blue);
+            }
+
+            .costPerMonth__cardWrap__price {
+              color: var(--soft-blue);
+              font-size: 58px;
+              font-weight: 700;
+            }
+          }
+        }
+
+        .costPerMonth__cardFile {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          column-gap: 10px;
+
+          p {
+            margin: 0;
+            color: rgb(109, 125, 139);
+          }
+        }
+
+        .costPerMonth__cardInfo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          margin-top: 60px;
+          row-gap: 40px;
+        }
+      }
+
+      .costPerMonth__card:hover {
+        border: 1px solid var(--dark-color);
+
+        .costPerMonth__cardWrap {
+          background: var(--dark-color);
+
+          .costPerMonth__cardWrap__title {
+            color: rgb(255, 255, 255);
+          }
+
+          .costPerMonth__cardWrap__priceWrap {
+            .costPerMonth__cardWrap__dollar {
+              color: rgb(255, 255, 255);
+            }
+
+            .costPerMonth__cardWrap__price {
+              color: rgb(255, 255, 255);
+            }
+          }
+        }
+        .costPerMonth__cardFile {
+          p {
+            color: var(--dark-color);
+          }
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 768px) {
   .MainPage {
     background-image: url('../../shared/assets/img/main-bgc-xl.png');
@@ -570,6 +791,45 @@
     }
   }
 
+
+
+  .costPerMonth {
+    .costPerMonth__title {
+      font-size: 30px;
+      text-align: left;
+      margin-bottom: 140px;
+    }
+
+    .costPerMonth__prices {
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 100px;
+
+
+      .costPerMonth__card {
+        width: 80%;
+        justify-self: flex-end;
+        .costPerMonth__cardWrap {
+          .costPerMonth__cardWrap__title {
+            font-size: 14px;
+          }
+
+          .costPerMonth__cardWrap__priceWrap {
+            height: 70px;
+
+            .costPerMonth__cardWrap__price {
+              font-size: 58px;
+            }
+          }
+        }
+
+        .costPerMonth__cardInfo {
+          margin-top: 60px;
+          row-gap: 40px;
+        }
+      }
+    }
+  }
+
 }
 
 
@@ -672,6 +932,49 @@
 
         .cardInfo__descr {
           font-size: 12px;
+        }
+      }
+    }
+  }
+
+
+  .costPerMonth {
+    .costPerMonth__title {
+      font-size: 25px;
+      margin-bottom: 140px;
+    }
+
+    .costPerMonth__prices {
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 100px;
+
+
+      .costPerMonth__card {
+        width: 100%;
+        justify-self: center;
+        .costPerMonth__cardWrap {
+          .costPerMonth__cardWrap__title {
+            font-size: 14px;
+          }
+
+          .costPerMonth__cardWrap__priceWrap {
+            height: 70px;
+
+            .costPerMonth__cardWrap__dollar {
+
+            }
+
+            .costPerMonth__cardWrap__price {
+              position: absolute;
+              right: 0;
+              font-size: 40px;
+            }
+          }
+        }
+
+        .costPerMonth__cardInfo {
+          margin-top: 60px;
+          row-gap: 30px;
         }
       }
     }

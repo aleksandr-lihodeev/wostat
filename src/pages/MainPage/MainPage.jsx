@@ -17,8 +17,15 @@ import {ReactComponent as Samsung} from "../../shared/assets/svg/partners-samsun
 import {ReactComponent as Monday} from "../../shared/assets/svg/partners-monday.svg";
 import {ReactComponent as Segment} from "../../shared/assets/svg/partners-segment.svg";
 import {ReactComponent as Protonet} from "../../shared/assets/svg/partners-protonet.svg";
+import {ReactComponent as IconFilePerMonth} from "../../shared/assets/svg/costPerMonth-icon-file.svg";
+import {Swiper, SwiperSlide} from 'swiper/react';
 
-import {directionsOfDataCollection} from "../../shared/lib/config";
+import 'swiper/css';
+import {directionsOfDataCollection, costPerMonth} from "../../shared/lib/config";
+import {Navigation} from "swiper/modules";
+
+import {ReactComponent as ArrowPrev} from "../../shared/assets/svg/swiper-arrow-prev.svg";
+import {ReactComponent as ArrowNext} from "../../shared/assets/svg/swiper-arrow-next.svg";
 
 
 const MainPage = () => {
@@ -196,11 +203,77 @@ const MainPage = () => {
                             )
                         })}
                     </div>
-
-
-
                 </div>
             </section>
+
+            <section className={cls.costPerMonth}>
+                <div className="container">
+                    <p className={cls.costPerMonth__title}>Cost per month of access</p>
+                    {windowWidth <= 992 && windowWidth >=769 ? (
+                        <Swiper
+                            modules={[Navigation]}
+                            spaceBetween={40}
+                            slidesPerView={2}
+                            loop={true}
+                            className={cls.swiper__costPerMonth}
+                            navigation={{
+                                nextEl: '.custom-swiper-next', // Селектор для следующей стрелки
+                                prevEl: '.custom-swiper-prev', // Селектор для предыдущей стрелки
+                            }}
+                        >
+                            {costPerMonth.map((item) => (
+                                <SwiperSlide>
+                                    <div className={cls.costPerMonth__card} key={item.titlePrice}>
+                                        <div className={cls.costPerMonth__cardWrap}>
+                                            <p className={cls.costPerMonth__cardWrap__title}>{item.titlePrice}</p>
+                                            <div className={cls.costPerMonth__cardWrap__priceWrap}>
+                                                <p className={cls.costPerMonth__cardWrap__dollar}>$</p>
+                                                <p className={cls.costPerMonth__cardWrap__price}>{item.price}</p>
+                                            </div>
+                                        </div>
+                                        <div className={cls.costPerMonth__cardInfo}>
+                                            <div className={cls.costPerMonth__cardFile}>
+                                                <IconFilePerMonth/>
+                                                <p>{item.titleMain}</p>
+                                            </div>
+                                            <MyButton classes={'costPerMonth__btn'}>Receive</MyButton>
+                                        </div>
+                                    </div>
+
+                                </SwiperSlide>
+                            ))}
+                            <div className={cls.arrowWrap}>
+                                <ArrowPrev className={'custom-swiper-prev'}/>
+                                <ArrowNext className={'custom-swiper-next'}/>
+                            </div>
+
+                        </Swiper>
+                    ) : (
+                        <div className={cls.costPerMonth__prices}>
+                            {costPerMonth.map((item) => (
+                                <div className={cls.costPerMonth__card} key={item.titlePrice}>
+                                    <div className={cls.costPerMonth__cardWrap}>
+                                        <p className={cls.costPerMonth__cardWrap__title}>{item.titlePrice}</p>
+                                        <div className={cls.costPerMonth__cardWrap__priceWrap}>
+                                            <p className={cls.costPerMonth__cardWrap__dollar}>$</p>
+                                            <p className={cls.costPerMonth__cardWrap__price}>{item.price}</p>
+                                        </div>
+                                    </div>
+                                    <div className={cls.costPerMonth__cardInfo}>
+                                        <div className={cls.costPerMonth__cardFile}>
+                                            <IconFilePerMonth/>
+                                            <p>{item.titleMain}</p>
+                                        </div>
+                                        <MyButton classes={'costPerMonth__btn'}>Receive</MyButton>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    )}
+                </div>
+            </section>
+
+
         </>
 
 

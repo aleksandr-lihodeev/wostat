@@ -28,6 +28,15 @@
   font-size: 18px;
 }
 
+.question__btn {
+  padding: 10px 44px;
+  border-radius: 4px;
+  background: var(--blue-color);
+  color: var(--white-color);
+  font-size: 18px;
+  text-align: center;
+}
+
 
 @media screen and (max-width: 992px) {
 

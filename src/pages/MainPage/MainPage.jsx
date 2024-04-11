@@ -21,7 +21,12 @@ import {ReactComponent as IconFilePerMonth} from "../../shared/assets/svg/costPe
 import {Swiper, SwiperSlide} from 'swiper/react';
 
 import 'swiper/css';
-import {directionsOfDataCollection, costPerMonth} from "../../shared/lib/config";
+import {
+    directionsOfDataCollection,
+    costPerMonth,
+    publiclyResearchMain,
+    publiclyResearchSubmain
+} from "../../shared/lib/config";
 import {Navigation} from "swiper/modules";
 
 import {ReactComponent as ArrowPrev} from "../../shared/assets/svg/swiper-arrow-prev.svg";
@@ -82,6 +87,7 @@ const MainPage = () => {
                     </main>
                 </div>
             </section>
+
             <section className={cls.discover__block}>
                 <div className={`${windowWidth <= 768 ? '' : 'container'}`}>
                     <div className={cls.discover__wrap}>
@@ -149,6 +155,7 @@ const MainPage = () => {
                     </div>
                 </div>
             </section>
+
             <section className={cls.partners}>
                 <div className="container">
                     <p>Over 200+ partners</p>
@@ -209,7 +216,7 @@ const MainPage = () => {
             <section className={cls.costPerMonth}>
                 <div className="container">
                     <p className={cls.costPerMonth__title}>Cost per month of access</p>
-                    {windowWidth <= 992 && windowWidth >=769 ? (
+                    {windowWidth <= 992 && windowWidth >= 769 ? (
                         <Swiper
                             modules={[Navigation]}
                             spaceBetween={40}
@@ -273,10 +280,59 @@ const MainPage = () => {
                 </div>
             </section>
 
+            <section className={cls.publiclyResearch}>
+                <div className="container">
+                    <p className={cls.publiclyResearch__title}>Publicly available research</p>
 
+                    <div className={cls.publiclyResearch__wrap}>
+
+                        <div className={cls.publiclyResearch__main}>
+                            {publiclyResearchMain.map((item) => (
+                                <div className={cls.publiclyResearch__main__card}>
+                                    <img src={item.image} alt="image"/>
+                                    <div className={cls.publiclyResearch__main__date}>
+                                        <p className={cls.publiclyResearch__main__category}>{item.date}</p>
+                                        <p className={cls.publiclyResearch__main__category}>{item.category}</p>
+                                    </div>
+                                    <p className={cls.publiclyResearch__main__card__title}>{item.title}</p>
+                                    <p className={cls.publiclyResearch__main__card__subtitle}>{item.subtitle}</p>
+                                </div>
+                            ))}
+                        </div>
+                        <div className={cls.publiclyResearch__submain}>
+                            {publiclyResearchSubmain.map((item) => (
+                                <div className={cls.publiclyResearch__submain__card}>
+                                    <div className={cls.pallet__publiclyResearch}></div>
+                                    <div>
+                                        <img src={item.image} alt="image"/>
+                                        <div className={cls.publiclyResearch__submain__cardWrap}>
+                                            <div className={cls.publiclyResearch__main__date}>
+                                                <p className={cls.publiclyResearch__main__category}>{item.date}</p>
+                                                <p className={cls.publiclyResearch__main__category}>{item.category}</p>
+                                            </div>
+                                            <p className={cls.publiclyResearch__submain__card__title}>{item.title}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                            <div className={cls.publiclyResearch__link__btn}>
+                                <a href="#" className={cls.publiclyResearch__link}>Job openings</a>
+                                <DiscoverLink className={cls.publiclyResearch__link__icon}/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className={cls.question}>
+                <div className={`${windowWidth <= 576 ? '' : 'container'}`}>
+                    <div className={cls.question__wrap}>
+                        <h1>Do you have any more questions?</h1>
+                        <MyButton classes={'question__btn'}>Ask a question</MyButton>
+                    </div>
+                </div>
+            </section>
         </>
-
-
     );
 };
 

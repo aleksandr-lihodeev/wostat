@@ -1,0 +1,22 @@
+.myLogo {
+  font-size: 52px;
+  font-weight: 600;
+  color: var(--white-color);
+  margin: 0;
+
+  .myLogoPoint {
+    color: var(--blue-color);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .myLogo {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .myLogo {
+    font-size: 30px;
+  }
+}

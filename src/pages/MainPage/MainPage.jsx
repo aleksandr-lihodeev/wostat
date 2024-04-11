@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import cls from './MainPage.module.scss'
-import {Header} from "../../widgets";
+import {Footer, Header} from "../../widgets";
 import {Link} from "react-router-dom";
-import {MyButton} from "../../shared";
+import {MyButton, MyLogo} from "../../shared";
 import {ReactComponent as Burger} from "../../shared/assets/svg/burger-menu.svg";
 import {ReactComponent as DiscoverLink} from "../../shared/assets/svg/discover-link.svg";
 import DiscoverDashboard from '../../shared/assets/img/mockup-discover.png'
@@ -55,7 +55,7 @@ const MainPage = () => {
         <>
             <section className={cls.MainPage}>
                 <Header classes={'main__header'}>
-                    <p className={cls.main__header__logo}>WOSTAT <span className={cls.main__header__point}>.</span></p>
+                    <MyLogo/>
                     <div className={cls.main__header__wrap}>
                         <nav className={`${cls.main__header__nav} ${isOpen ? cls.main__header__nav__active : ''}`}>
                             <ul className={cls.main__header__list}>
@@ -71,11 +71,11 @@ const MainPage = () => {
                             </ul>
                         </nav>
 
-                        <MyButton classes={'main__header__btn'}>
+                        <MyButton id={''} classes={'main__header__btn'}>
                             Price
                         </MyButton>
                     </div>
-                    <MyButton state={isOpen} setState={setOpen} classes={'main__header__burger'}><Burger/></MyButton>
+                    <Burger className={cls.main__burgerMenu} onClick={() => setOpen(!isOpen)}/>
                 </Header>
                 <div className="container">
                     <main>
@@ -332,6 +332,8 @@ const MainPage = () => {
                     </div>
                 </div>
             </section>
+
+            <Footer/>
         </>
     );
 };

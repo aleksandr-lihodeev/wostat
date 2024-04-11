@@ -1,9 +1,9 @@
 import React from 'react';
 import cls from './MyButton.module.scss'
 
-const MyButton = ({children,classes,setState,state}) => {
+const MyButton = ({children,classes}) => {
     return (
-        <button onClick={() => setState(!state)} className={`${cls.myButton} ${cls[classes]}`}>
+        <button className={`${cls.myButton} ${cls[classes]}`}>
             {children}
         </button>
     );

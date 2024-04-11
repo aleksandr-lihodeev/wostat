@@ -2,7 +2,12 @@
   border: 0;
   outline: none;
   background: none;
-
+  padding: 10px 44px;
+  border-radius: 4px;
+  background: var(--blue-color);
+  color: var(--white-color);
+  font-size: 18px;
+  text-align: center;
 }
 
 .main__header__btn {
@@ -63,6 +68,9 @@
     font-size: 18px;
   }
 
+  .footer__btn {
+    width: 100%;
+  }
 
 }
 

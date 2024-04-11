@@ -45,7 +45,7 @@
   .main__content__btn {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 20%;
     display: block;
     padding: 10px 44px 10px 44px;
     border-radius: 4px;
@@ -60,7 +60,7 @@
 @media screen and (max-width: 576px) {
   .main__content__btn {
     position: absolute;
-    bottom: -40%;
+    bottom: 10%;
     width: 100%;
   }
 }

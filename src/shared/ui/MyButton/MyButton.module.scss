@@ -18,9 +18,11 @@
   color: var(--white-color);
   font-size: 18px;
 }
+
 .main__header__burger {
   display: none;
 }
+
 .main__content__btn {
   display: none;
 }
@@ -42,6 +44,9 @@
   text-align: center;
 }
 
+.researches-btn {
+  margin-top: 60px;
+}
 
 @media screen and (max-width: 992px) {
 
@@ -69,6 +74,11 @@
   }
 
   .footer__btn {
+    width: 100%;
+  }
+
+  .researches-btn {
+    margin-top: 60px;
     width: 100%;
   }
 

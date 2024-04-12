@@ -1,9 +1,15 @@
 import React from 'react';
 import cls from './MyLogo.module.scss'
 
-function MyLogo() {
+function MyLogo({dark}) {
     return (
-        <p className={cls.myLogo}>WOSTAT <span className={cls.myLogoPoint}>.</span></p>
+        <p className={cls.myLogo} style={dark ? {
+            color: 'rgb(35, 35, 64)'
+        } : {
+            color: 'white'
+        }}>
+            WOSTAT <span className={cls.myLogoPoint}>.</span>
+        </p>
     );
 }
 

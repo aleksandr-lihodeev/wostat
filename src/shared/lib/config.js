@@ -11,6 +11,17 @@ import publiclyResearchSubmain2 from '../assets/img/publiclyResearchSubmain-2.pn
 import publiclyResearchSubmain3 from '../assets/img/publiclyResearchSubmain-3.png'
 import publiclyResearchSubmain4 from '../assets/img/publiclyResearchSubmain-4.png'
 
+import researchesCards1 from '../assets/img/researches-cards-1.png'
+import researchesCards2 from '../assets/img/researches-cards-2.png'
+import researchesCards3 from '../assets/img/researches-cards-3.png'
+import researchesCards4 from '../assets/img/researches-cards-4.png'
+import researchesCards5 from '../assets/img/researches-cards-5.png'
+import researchesCards6 from '../assets/img/researches-cards-6.png'
+import researchesCards7 from '../assets/img/researches-cards-7.png'
+import researchesCards8 from '../assets/img/researches-cards-8.png'
+import researchesCards9 from '../assets/img/researches-cards-9.png'
+
+
 export const directionsOfDataCollection = [
     {
         ico: <Realty/>,
@@ -106,3 +117,69 @@ export const publiclyResearchSubmain = [
     },
 ]
 
+
+export const researchesCards = [
+    {
+        image: researchesCards1,
+        title: 'Data exported by Team Cloud organization',
+        subtitle: 'An internal investigation recently uncovered a vulnerability (identified as CVE-2022-21706) in Zulip’s invitation links.',
+        category: 'Category',
+        date: 'July 1, 2023'
+    },
+    {
+        image: researchesCards2,
+        title: 'Swap long video calls and emails for asynchronous video',
+        subtitle: 'Meetings are essential for communication and team building, but they’re often unproductive. Asynchronous video to the rescue.',
+        category: 'Category',
+        date: 'June 21, 2023'
+    },
+    {
+        image: researchesCards3,
+        title: 'Flexibility reigns: six key takeaways from Frontiers 2023',
+        subtitle: 'The future of work is having a digital HQ that works for you.',
+        category: 'Category',
+        date: 'June 10, 2023'
+    },
+    {
+        image: researchesCards4,
+        title: 'Team plus Sales Cloud: Your sales team’s new digital HQ',
+        subtitle: 'Why everyone on your sales team will benefit from our app’s killer features.',
+        category: 'Category',
+        date: 'May 11, 2023'
+    },
+    {
+        image: researchesCards5,
+        title: 'What is digital culture?',
+        subtitle: 'The teams best prepared for change use modern digital communication tools, feel comfortable learning new ones and continually adapt how they work.',
+        category: 'Category',
+        date: 'May 22, 2023'
+    },
+    {
+        image: researchesCards6,
+        title: 'Steve Dotto’s top 10 tips for overcoming workplace hiccups',
+        subtitle: 'The executive producer of Dotto Tech shares his favorite Slack strategies for conquering common challenges in the digital-first workplace.',
+        category: 'Category',
+        date: 'April 4, 2023'
+    },
+    {
+        image: researchesCards7,
+        title: 'What’s new in Team: iPad updates, split-screen view and more',
+        subtitle: 'An internal investigation recently uncovered a vulnerability (identified as CVE-2022-21706) in Zulip’s invitation links.',
+        category: 'Category',
+        date: 'March 18, 2023'
+    },
+    {
+        image: researchesCards8,
+        title: 'Drive more efficiency and cost savings with these updates to Workflow Builder',
+        subtitle: 'New and upcoming automation features help your teams do more with less.',
+        category: 'Category',
+        date: 'February 12, 2023'
+    },
+    {
+        image: researchesCards9,
+        title: '7 tips to onboard sales reps with ease',
+        subtitle: 'The executive producer of Dotto Tech shares his favorite Slack strategies for conquering common challenges in the digital-first workplace.',
+        category: 'Category',
+        date: 'January 7, 2023'
+    },
+]

@@ -1,9 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import cls from './MainPage.module.scss'
 import {Footer, Header} from "../../widgets";
-import {Link} from "react-router-dom";
-import {MyButton, MyLogo} from "../../shared";
-import {ReactComponent as Burger} from "../../shared/assets/svg/burger-menu.svg";
+import {MyButton} from "../../shared";
 import {ReactComponent as DiscoverLink} from "../../shared/assets/svg/discover-link.svg";
 import DiscoverDashboard from '../../shared/assets/img/mockup-discover.png'
 import DiscoverDashboardLg from '../../shared/assets/img/mockup-discover-lg.png'
@@ -54,29 +52,7 @@ const MainPage = () => {
     return (
         <>
             <section className={cls.MainPage}>
-                <Header classes={'main__header'}>
-                    <MyLogo/>
-                    <div className={cls.main__header__wrap}>
-                        <nav className={`${cls.main__header__nav} ${isOpen ? cls.main__header__nav__active : ''}`}>
-                            <ul className={cls.main__header__list}>
-                                <li className={cls.main__header__item}>
-                                    <Link to={'/'}>About</Link>
-                                </li>
-                                <li className={cls.main__header__item}>
-                                    <Link to={'/'}>Product</Link>
-                                </li>
-                                <li className={cls.main__header__item}>
-                                    <Link to={'/'}>Researches</Link>
-                                </li>
-                            </ul>
-                        </nav>
-
-                        <MyButton id={''} classes={'main__header__btn'}>
-                            Price
-                        </MyButton>
-                    </div>
-                    <Burger className={cls.main__burgerMenu} onClick={() => setOpen(!isOpen)}/>
-                </Header>
+                <Header state={isOpen} setState={setOpen} dark={false}/>
                 <div className="container">
                     <main>
                         <p className={cls.main__title}>Whoever owns the information owns the world</p>

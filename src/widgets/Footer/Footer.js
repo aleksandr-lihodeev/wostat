@@ -46,16 +46,16 @@ function Footer() {
                                 <nav>
                                     <ul>
                                         <li>
-                                            <Link to={'/'}>About</Link>
+                                            <Link to={'/about'}>About</Link>
                                         </li>
                                         <li>
                                             <Link to={'/'}>Price</Link>
                                         </li>
                                         <li>
-                                            <Link to={'/'}>Research</Link>
+                                            <Link to={'/research'}>Research</Link>
                                         </li>
                                         <li>
-                                            <Link to={'/'}>Job</Link>
+                                            <Link to={'/vacancy'}>Job</Link>
                                         </li>
                                     </ul>
                                 </nav>

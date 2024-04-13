@@ -15,7 +15,7 @@ const Header = ({state, setState, dark}) => {
                         <nav className={`${cls.main__header__nav} ${state ? cls.main__header__nav__active : ''}`}>
                             <ul className={cls.main__header__list}>
                                 <li className={cls.main__header__item}>
-                                    <Link to={'/'}
+                                    <Link to={'/about'}
                                           className={dark ? cls.header__link_dark : cls.header__link_light}>About</Link>
                                 </li>
                                 <li className={cls.main__header__item}>
@@ -29,7 +29,7 @@ const Header = ({state, setState, dark}) => {
                             </ul>
                         </nav>
 
-                        <MyButton id={''} classes={'main__header__btn'}>
+                        <MyButton classes={'main__header__btn'}>
                             Price
                         </MyButton>
                     </div>

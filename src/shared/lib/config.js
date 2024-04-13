@@ -183,3 +183,22 @@ export const researchesCards = [
         date: 'January 7, 2023'
     },
 ]
+
+export const vacancies = [
+    {
+        title:'BI Programmer'
+    },
+    {
+        title:'Backend Developer'
+    },
+    {
+        title:'Full Stack Developer'
+    },
+    {
+        title:'QA Engineer'
+    },
+    {
+        title:'Data Scientist'
+    },
+
+]

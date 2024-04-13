@@ -1,0 +1,161 @@
+.vacancy {
+  background: #F5F5F5;
+  .vacancy__wrap {
+    padding: 80px 0;
+
+    .vacancy__title {
+      color: var(--dark-color);
+      font-size: 50px;
+      font-weight: 700;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+
+    .vacancy__subtitle {
+      color: var(--dark-color);
+      font-size: 14px;
+      text-align: left;
+      margin-bottom: 60px;
+    }
+
+    .vacancy__cards {
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: auto;
+      grid-row-gap: 30px;
+
+
+      .vacancy__card {
+        padding: 20px 0;
+        border-bottom: 4px solid rgb(222, 225, 230);
+
+        .vacancy__cardTitle {
+          color: var(--dark-color);
+          font-size: 30px;
+          font-weight: 700;
+          text-align: left;
+          margin-bottom: 10px;
+        }
+
+        .vacancy__cardDescr {
+          p {
+            margin: 0;
+            font-size: 14px;
+          }
+          display: flex;
+          align-items: center;
+          column-gap: 118px;
+        }
+
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 992px){
+  .vacancy {
+    .vacancy__wrap {
+      padding: 60px 0;
+
+      .vacancy__title {
+        font-size: 40px;
+      }
+
+      .vacancy__subtitle {
+        margin-bottom: 30px;
+      }
+
+      .vacancy__cards {
+        grid-row-gap: 20px;
+
+
+        .vacancy__card {
+          .vacancy__cardTitle {
+            font-size: 25px;
+          }
+
+          .vacancy__cardDescr {
+            p {
+              margin: 0;
+            }
+            column-gap: 24px;
+          }
+
+        }
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .vacancy {
+    .vacancy__wrap {
+      padding: 40px 0;
+
+      .vacancy__title {
+        font-size: 30px;
+      }
+
+      .vacancy__cards {
+        .vacancy__card {
+          padding: 30px 0;
+          .vacancy__cardTitle {
+            font-size: 20px;
+          }
+
+          .vacancy__cardDescr {
+            p {
+              margin: 0;
+            }
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            column-gap: 0;
+            row-gap: 30px;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 576px){
+  .vacancy {
+    .vacancy__wrap {
+      padding: 30px 0;
+
+      .vacancy__title {
+        font-size: 25px;
+      }
+
+      .vacancy__subtitle {
+        margin-bottom: 20px;
+      }
+
+      .vacancy__cards {
+        .vacancy__card {
+          padding: 20px 0;
+          .vacancy__cardTitle {
+            font-size: 18px;
+          }
+
+          .vacancy__cardDescr {
+            p {
+              margin: 0;
+              font-size: 12px;
+            }
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            column-gap: 0;
+            row-gap: 20px;
+          }
+        }
+      }
+
+    }
+  }
+}

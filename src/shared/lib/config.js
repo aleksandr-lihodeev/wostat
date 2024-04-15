@@ -200,5 +200,4 @@ export const vacancies = [
     {
         title:'Data Scientist'
     },
-
 ]

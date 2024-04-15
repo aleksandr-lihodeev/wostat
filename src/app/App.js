@@ -3,7 +3,6 @@ import './styles/App.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import View from "./routes/View";
 
-
 const App = () => {
     return (
         <>

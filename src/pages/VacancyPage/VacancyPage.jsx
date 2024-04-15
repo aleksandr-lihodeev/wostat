@@ -1,12 +1,18 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import cls from './VacancyPage.module.scss'
 import {Footer, Header} from "../../widgets";
-import {vacancies} from "../../shared/lib/config";
 import {MyButton} from "../../shared";
+import {fetchData} from "../../shared/lib/helper";
 
 function VacancyPage() {
+    const [data, setData] = useState([])
+
 
     const [isOpen,setOpen] = useState(true)
+
+    useEffect(() => {
+        fetchData('http://localhost:5000/vacancies', setData);
+    }, []);
 
     return (
         <section className={cls.vacancy}>
@@ -16,12 +22,11 @@ function VacancyPage() {
                     <p className={cls.vacancy__title}>Open vacancies</p>
                     <p className={cls.vacancy__subtitle}>Please respond to the vacancy you like and we will contact you</p>
                     <div className={cls.vacancy__cards}>
-                        {vacancies.map((item) => (
+                        {data?.map((item) => (
                             <div className={cls.vacancy__card}>
                                 <p className={cls.vacancy__cardTitle}>{item.title}</p>
                                 <div className={cls.vacancy__cardDescr}>
-                                    <p>Please respond to the vacancy you like and we will contact you Please respond to the vacancy you like and we will contact you
-                                        Please respond to the vacancy you like and we will contact you Please respond to the vacancy you like and we will contact you</p>
+                                    <p>{item.subtitle}</p>
                                     <MyButton>Respond</MyButton>
                                 </div>
                             </div>

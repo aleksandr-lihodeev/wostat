@@ -1,23 +1,12 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import cls from "./Footer.module.scss";
 import {MyButton, MyInput, MyLogo} from "../../shared";
 import {Link} from "react-router-dom";
+import useWindowWidth from "../../shared/lib/useWindowWidth";
 
 function Footer() {
 
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-    useEffect(() => {
-        const handleResize = () => {
-            setWindowWidth(window.innerWidth);
-        };
-
-        window.addEventListener('resize', handleResize);
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
+    const windowWidth = useWindowWidth()
 
     return (
         <footer className={cls.footer}>

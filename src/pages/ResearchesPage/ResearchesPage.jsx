@@ -1,12 +1,21 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import cls from './ResearchesPage.module.scss'
 import {Footer, Header} from "../../widgets";
-import {researchesCards} from "../../shared/lib/config";
 import {MyButton} from "../../shared";
+import ResearchesPageItem from "./ResearchesPageItems/ResearchesPageItem";
+import {fetchData} from "../../shared/lib/helper";
+
+
 
 function ResearchesPage() {
+    const [data, setData] = useState([])
 
-    const [isOpen,setOpen] = useState(true)
+    const [isOpen, setOpen] = useState(true)
+
+
+    useEffect(() => {
+        fetchData('http://localhost:5000/posts', setData);
+    }, []);
 
     return (
         <>
@@ -17,19 +26,8 @@ function ResearchesPage() {
                         <h1 className={cls.researches__title}>Researches</h1>
                         <p className={cls.researches__subtitle}>All the research is available here for public access</p>
                         <div className={cls.researches__cards}>
-                            {researchesCards.map((item) => (
-                                <div className={cls.researches__card}>
-                                    <img src={item.image} alt="card"/>
-                                    <div className={cls.researches__cardWrap}>
-                                        <h3>{item.title}</h3>
-                                        <p className={cls.researches__card__subtitle}>{item.subtitle}</p>
-                                        <div className={cls.researches__cardInfo}>
-                                            <p>{item.category}</p>
-                                            <div className={cls.researches__cardInfo__pallet}></div>
-                                            <p>{item.date}</p>
-                                        </div>
-                                    </div>
-                                </div>
+                            {data?.map((item) => (
+                                <ResearchesPageItem item={item}/>
                             ))}
                         </div>
                         <div className={cls.researches__btnWrap}>

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import cls from './MainPage.module.scss'
 import {Footer, Header} from "../../widgets";
 import {MyButton} from "../../shared";
@@ -29,25 +29,14 @@ import {Navigation} from "swiper/modules";
 
 import {ReactComponent as ArrowPrev} from "../../shared/assets/svg/swiper-arrow-prev.svg";
 import {ReactComponent as ArrowNext} from "../../shared/assets/svg/swiper-arrow-next.svg";
+import useWindowWidth from "../../shared/lib/useWindowWidth";
+import {Link} from "react-router-dom";
 
 
 const MainPage = () => {
     const [isOpen, setOpen] = useState(true)
 
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-    useEffect(() => {
-        const handleResize = () => {
-            setWindowWidth(window.innerWidth);
-        };
-
-        window.addEventListener('resize', handleResize);
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
-
+    const windowWidth = useWindowWidth()
 
     return (
         <>
@@ -123,7 +112,7 @@ const MainPage = () => {
                                     of the team makes a unique contribution and has a professional skill in their
                                     field.</p>
                                 <div className={cls.team__link__btn}>
-                                    <a href="#" className={cls.team__link}>Job openings</a>
+                                    <Link to={'/vacancy'} className={cls.team__link}>Job openings</Link>
                                     <DiscoverLink className={cls.team__link__icon}/>
                                 </div>
                             </div>
@@ -292,7 +281,7 @@ const MainPage = () => {
                                 </div>
                             ))}
                             <div className={cls.publiclyResearch__link__btn}>
-                                <a href="#" className={cls.publiclyResearch__link}>Job openings</a>
+                                <Link to={'/vacancy'} className={cls.publiclyResearch__link}>Job openings</Link>
                                 <DiscoverLink className={cls.publiclyResearch__link__icon}/>
                             </div>
                         </div>

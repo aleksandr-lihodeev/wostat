@@ -22,4 +22,9 @@ ul {
   padding-top: 100px;
 }
 
-
+.css-dsuxgy-MuiTableCell-root {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

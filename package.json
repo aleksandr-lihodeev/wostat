@@ -29,6 +29,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "build": "react-scripts build",
     "server": "json-server --watch db.json --port 5000 --middlewares ./range.js",
     "client": "npm start",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
